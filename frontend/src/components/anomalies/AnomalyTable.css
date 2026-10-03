@@ -1,0 +1,39 @@
+.anomaly-table {
+  font-size: 13px;
+}
+
+.anomaly-table th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-tertiary);
+  font-weight: 600;
+  padding: 0 var(--space-3) var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.anomaly-table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.anomaly-table tr:last-child td {
+  border-bottom: none;
+}
+
+.anomaly-table__link {
+  color: var(--color-accent-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.anomaly-table__link:hover {
+  text-decoration: underline;
+}
+
+.anomaly-table__empty {
+  color: var(--color-text-tertiary);
+  font-size: 13px;
+  padding: var(--space-4) 0;
+}

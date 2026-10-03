@@ -1,0 +1,66 @@
+.intervention-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.intervention-flow__hint {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.intervention-flow__status-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.intervention-flow__timestamp {
+  color: var(--color-text-tertiary);
+  font-size: 12px;
+}
+
+.intervention-flow__verification {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  width: 100%;
+}
+
+.intervention-flow__error {
+  color: var(--color-critical);
+  font-size: 12px;
+}
+
+.verification-result {
+  background: var(--color-surface-sunken);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.verification-result__message {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.verification-result__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-4);
+}
+
+.verification-result__label {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}

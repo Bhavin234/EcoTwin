@@ -1,0 +1,49 @@
+.investigation-card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+}
+
+.investigation-card {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.12s ease;
+}
+
+.investigation-card:hover {
+  border-color: var(--color-accent);
+}
+
+.investigation-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.investigation-card__resource {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.investigation-card__deviation {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-1);
+}
+
+.investigation-card__meta {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+
+.investigations-empty {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  max-width: 65ch;
+}

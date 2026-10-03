@@ -1,0 +1,54 @@
+.investigation-detail__meta-row {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.investigation-detail__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.investigation-detail__layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-4);
+  max-width: 1080px;
+  align-items: start;
+}
+
+.investigation-detail__timeline-card {
+  position: sticky;
+  top: var(--space-4);
+}
+
+@media (max-width: 900px) {
+  .investigation-detail__layout {
+    grid-template-columns: 1fr;
+  }
+  .investigation-detail__timeline-card {
+    position: static;
+  }
+}
+
+.investigation-detail__prompt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.investigation-detail__error {
+  color: var(--color-critical);
+  font-size: 12px;
+}
+
+.investigation-detail__back {
+  margin-top: var(--space-5);
+  padding-left: 0;
+}

@@ -1,0 +1,133 @@
+/*
+  Design direction (per project brief): a serious enterprise sustainability
+  operations console — not an "AI startup" look. No gradients, neon,
+  glassmorphism, or decorative animation anywhere in this file or any
+  component. Typography: IBM Plex Sans for UI text, IBM Plex Mono for
+  numeric/metric readouts — chosen deliberately over a generic
+  Inter-everywhere default: the monospaced figures read like instrument
+  readouts, which fits a product about metering utilities.
+*/
+
+:root {
+  /* --- Color: warm neutral, not stark white/black --- */
+  --color-bg: #faf9f6;
+  --color-surface: #ffffff;
+  --color-surface-sunken: #f4f3ef;
+  --color-border: #e2e1da;
+  --color-border-strong: #cdccc3;
+
+  --color-text-primary: #1c1e1a;
+  --color-text-secondary: #63665e;
+  --color-text-tertiary: #8b8d84;
+
+  /* --- Accent: restrained forest green --- */
+  --color-accent: #2f6b4f;
+  --color-accent-dark: #21503a;
+  --color-accent-bg: #e8f0ea;
+  --color-accent-bg-strong: #d3e4d9;
+
+  /* --- Status --- */
+  --color-warning: #9a6b12;
+  --color-warning-bg: #faf1dd;
+  --color-warning-border: #e8cf9d;
+
+  --color-critical: #a33a2f;
+  --color-critical-bg: #faeae7;
+  --color-critical-border: #e8b8ae;
+
+  --color-info: #3d5a80;
+  --color-info-bg: #e9eff5;
+
+  --color-neutral-bg: #eeede8;
+  --color-neutral-border: #d7d5cc;
+
+  /* --- Type --- */
+  --font-ui: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* --- Shape --- */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* --- Spacing scale --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --sidebar-width: 224px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Focus visibility for keyboard navigation (docs Milestone 6, requirement #29) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

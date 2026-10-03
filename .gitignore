@@ -1,0 +1,30 @@
+# Root-level safety net in addition to backend/.gitignore and frontend/.gitignore
+# (docs Milestone 8, security/configuration audit).
+
+# Secrets — never commit an actual .env file.
+.env
+.env.local
+.env.*.local
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS/editor cruft
+.DS_Store
+*.log
+.vscode/
+.idea/

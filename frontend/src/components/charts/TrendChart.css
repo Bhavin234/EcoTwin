@@ -1,0 +1,58 @@
+.trend-chart {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.trend-chart__gridline {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.trend-chart__axis-line {
+  stroke: var(--color-border-strong);
+  stroke-width: 1;
+}
+
+.trend-chart__axis-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--color-text-tertiary);
+}
+
+.trend-chart__marker {
+  stroke-width: 1.5;
+  stroke-dasharray: 3 3;
+}
+
+.trend-chart__marker-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.trend-chart__empty {
+  color: var(--color-text-tertiary);
+  font-size: 13px;
+  padding: var(--space-5) 0;
+}
+
+.trend-chart-legend {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.trend-chart-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.trend-chart-legend__swatch {
+  width: 10px;
+  height: 3px;
+  border-radius: 2px;
+}

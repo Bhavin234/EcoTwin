@@ -1,0 +1,40 @@
+.impact-summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.impact-summary__group {
+  border-left: 3px solid var(--color-border-strong);
+  padding-left: var(--space-4);
+}
+
+.impact-summary__group--positive {
+  border-left-color: var(--color-accent);
+}
+.impact-summary__group--warning {
+  border-left-color: var(--color-warning);
+}
+
+.impact-summary__kind-label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+.impact-summary__tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-3);
+}
+
+.impact-summary__count {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin-top: var(--space-2);
+}
+
+.impact-summary__empty {
+  color: var(--color-text-tertiary);
+  font-size: 13px;
+}
